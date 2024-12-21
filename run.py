@@ -4,7 +4,7 @@ from telethon.tl.types import MessageMediaDice
 api_id = '8600879'
 api_hash = 'e94e3ea1f78e7a12768e60b7a0e00564'
 
-client = TelegramClient('dom4k', api_id, api_hash)
+client = TelegramClient('my', api_id, api_hash)
 
 emotion = "🎰🎲🏀🎳🎯"
 wins = [64,6,5,6,6]
