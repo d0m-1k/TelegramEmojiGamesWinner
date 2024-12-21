@@ -1,1 +1,10 @@
-# TelegramEmojiGamesWinner
+#TEGW
+Бот для выигрыша в играх TG
+
+## Как использовать
+1. Устанавливаем python ([python.org](python.org))
+2. Устанавливаем библиотеку `pip install telethon`
+3. Запускаем `python run.py`
+4. Пишем номер игры, начиная с 0
+5. Пишем id чата, куда вы хотите отправить Emoji
+6. Готово!
