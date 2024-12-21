@@ -9,8 +9,20 @@ client = TelegramClient('my', api_id, api_hash)
 emotion = "🎰🎲🏀🎳🎯"
 wins = [64,6,5,6,6]
 
-j = int(input("Enter emotion ("+emotion+"): "))
-chat = int(input("Enter chat id: "))
+try:
+	j = int(input("Введите номер эмодзи ("+emotion+"): "))-1
+	if len(emotion) < j+1:
+		print("Ошибка: неверный номер эмодзи")
+		exit()
+except ValueError:
+	print("Ошибка: вы ввели не чило")
+	exit()
+
+try:
+	chat = int(input("Введите id чата: "))
+except ValueError:
+	print("Ошибка: вы ввели не чило")
+	exit()
 
 async def main():
 	await client.start()
